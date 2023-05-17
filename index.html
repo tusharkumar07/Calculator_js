@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculate</title>
+</head>
+<body>
+    <section class="calculator">
+        <form clas="inputsc">
+            <input type="text" class="screen">
+        </form>
+        <div class="btnbox">
+            <div class="assbtn">
+                <input type="button" value="*" onclick="screen.value+='*'">
+                <input type="button" value="/" onclick="screen.value+='/'">
+                <input type="button" value="+" onclick="screen.value+='+'">
+                <input type="button" value="-" onclick="screen.value+='-'">
+            </div>
+    
+            <div class="numbtn">
+                <input type="button" value="9" onclick="screen.value+='9'">
+                <input type="button" value="8" onclick="screen.value+='8'">
+                <input type="button" value="7" onclick="screen.value+='7'">
+                <input type="button" value="6" onclick="screen.value+='6'">
+            </div>
+    
+            <div class="numbtn">
+                <input type="button" value="5" onclick="screen.value+='5'">
+                <input type="button" value="4" onclick="screen.value+='4'">
+                <input type="button" value="3" onclick="screen.value+='3'">
+                <input type="button" value="2" onclick="screen.value+='2'">
+            </div>
+    
+            <div class="numbtn">
+                <input type="button" value="1" onclick="screen.value+='1'">
+                <input type="button" value="0" onclick="screen.value+='0'">
+                <input type="button" value="00" onclick="screen.value+='00'">
+                <input type="button" value="." onclick="screen.value+='.'">
+            </div>
+    
+            <div class="spebtn">
+                <input type="button" value="DEL" onclick="screen.value=screen.value.toString().slice(0,-1)">
+                <input type="button" value="AC" onclick="screen.value=''">
+                <input type="button" value="=" onclick="screen.value= eval(screen.value)" class="equal">
+                <!-- <input type="button" value="=" class="equal" onclick="screen.value=20"> -->
+            </div>
+        </div>
+        
+    </section>
+        
+    <script src="app.js"></script>
+</body>
+</html>
